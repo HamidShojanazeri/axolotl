@@ -22,6 +22,7 @@ to the attention layers via standard PEFT.
 Reference: https://arxiv.org/abs/2404.15159
 """
 
+from .args import MixLoraArgs
 from .plugin import MixLoraPlugin
 
-__all__ = ["MixLoraPlugin"]
+__all__ = ["MixLoraArgs", "MixLoraPlugin"]

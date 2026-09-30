@@ -24,6 +24,9 @@ class MixLoraPlugin(BasePlugin):
     Plugin for MixLoRA support in Axolotl.
     """
 
+    def get_input_args(self):
+        return "axolotl.integrations.mixlora.MixLoraArgs"
+
     def get_adapter_capabilities(self):
         return [AdapterCapabilities(name="mixlora", lora_like=True)]
 
